@@ -1,0 +1,58 @@
+.square {
+	color: white;
+	font-size: 5rem;
+	width: 150px;
+	height: 150px;
+	text-align: center;
+	line-height: 150px;
+	margin: 0;
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+.board {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+
+.board div:nth-child(3n-1) {
+	border-right: 2px solid white;
+	border-left: 2px solid white;
+
+}
+
+.board div:nth-child(1n+4) {
+	border-top: 2px solid white;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.history {
+	margin-top: 50px;
+}
+
+.next-btn {
+	margin-left: 50px;
+}
+
+.prev-btn {
+	margin-right: 50px;
+}
+
+.red {
+	color: var(--color-red);
+}
+
+.green {
+	color: var(--color-green);
+}
